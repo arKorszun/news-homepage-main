@@ -8,6 +8,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./styleMobile.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -26,17 +27,34 @@
   <div class="allPage">
     <div class="toolbar">
       <div class="logo"><img src="./assets/images/logo.svg" alt="'W' logo" /></div>
+
+      <div class="mobileMenu">
+        <img id="openbtn" src="./assets/images/icon-menu.svg" />
+        <div class="hideShow">
+          <img id="closebtn" src="./assets/images/icon-menu-close.svg"/>
+          <div class="listMenu">
+            <a href="#">Home</a>
+            <a href="#">New</a>
+            <a href="#">Popular</a>
+            <a href="#">Trending</a>
+            <a href="#">Categories</a>
+          </div>
+        </div>
+
+
+      </div>
       <div class="menu">
-        <div>Home</div>
-        <div>New</div>
-        <div>Popular</div>
-        <div>Trending</div>
-        <div>Categories</div>
+        <div><a href="#">Home</a></div>
+        <div><a href="#">New</a></div>
+        <div><a href="#">Popular</a></div>
+        <div><a href="#">Trending</a></div>
+        <div><a href="#">Categories</a></div>
       </div>
     </div>
 
     <div class="mainArt">
-      <div class="mainImage"><img width="100%" height="100%" src="./assets/images/image-web-3-desktop.jpg" alt="colorfull puzzle blocks"/> </div>
+      <div class="mainImage"><img width="100%" height="100%" src="./assets/images/image-web-3-desktop.jpg"
+          alt="colorfull puzzle blocks" /> </div>
       <div class="mainTitle">
         <h1>The Bright Future of Web 3.0?</h1>
       </div>
@@ -54,27 +72,27 @@
         <h2>New</h2>
       </div>
       <div class="sideArt">
-        <h3>Hydrogen VS Electric Cars</h3>
+        <a href="#">Hydrogen VS Electric Cars</a>
         <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
-        <hr/>
+        <hr />
       </div>
       <div class="sideArt">
-        <h3>The Downsides of AI Artistry</h3>
+        <a href="#">The Downsides of AI Artistry</a>
         <p>What are the possible adverse effects of on-demand AI image generation?</p>
-        <hr/>
+        <hr />
       </div>
       <div class="sideArt">
-        <h3>Is VC Funding Drying Up?</h3>
+        <a href="#">Is VC Funding Drying Up?</a>
         <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
       </div>
     </div>
 
     <div class="bottomPanel">
       <div class="bottomArt">
-        <div class="artImageB"><img width="100%" height="100%" src="./assets/images/image-retro-pcs.jpg"/></div>
+        <div class="artImageB"><img width="100%" height="100%" src="./assets/images/image-retro-pcs.jpg" /></div>
         <div class="bottomText">
           <h2>01</h2>
-          <h3>Reviving Retro PCs</h3>
+          <a href="#">Reviving Retro PCs</a>
           <p>What happens when old PCs are given modern upgrades?</p>
         </div>
       </div>
@@ -82,22 +100,22 @@
         <div class="artImageB"> <img width="100%" height="100%" src="./assets/images/image-top-laptops.jpg" /></div>
         <div class="bottomText">
           <h2>02</h2>
-          <h3>Top 10 Laptops of 2022</h3>
+          <a href="#">Top 10 Laptops of 2022</a>
           <p>Our best picks for various needs and budgets.</p>
         </div>
       </div>
       <div class="bottomArt">
-        <div class="artImageB"><img width="100%" height="100%" src="./assets/images/image-gaming-growth.jpg"/></div>
+        <div class="artImageB"><img width="100%" height="100%" src="./assets/images/image-gaming-growth.jpg" /></div>
         <div class="bottomText">
           <h2>03</h2>
-          <h3>The Growth of Gaming</h3>
+          <a href="#">The Growth of Gaming</a>
           <p>How the pandemic has sparked fresh opportunities.</p>
         </div>
       </div>
     </div>
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="#">Arkadiusz Korszuń</a>.
     </div>
   </div>
 
