@@ -1,0 +1,35 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.allPage{
+  display:grid;
+  grid-template-columns: 65vh 35vh;
+  grid-template-rows: 10vh 60vh 30vh;
+}
+
+.toolbar{
+  grid-area: 1/1/1/3;
+  background-color: yellow;
+}
+
+.mainArt{
+  background-color: blue;
+  grid-area: 2/1/2/1 ;
+}
+
+.sidePanel{
+  background-color: blueviolet;
+  grid-area: 2/2/2/3 ;
+}
+
+.bottomPanel{
+  background-color: aqua;
+  grid-area: 3/1/3/3 ;
+  display: inline-flex;
+}
