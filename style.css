@@ -7,29 +7,131 @@
   color: hsl(228, 45%, 44%);
 }
 
-.allPage{
-  display:grid;
-  grid-template-columns: 65vh 35vh;
-  grid-template-rows: 10vh 60vh 30vh;
+body {
+  font-family: "Inter", sans-serif;
 }
 
-.toolbar{
+.allPage {
+  position: absolute;
+  top: 7%;
+  left: 18%;
+  display: grid;
+  grid-template-columns: 50% 24%;
+  grid-template-rows: 10% 60% 40%;
+}
+
+.toolbar {
   grid-area: 1/1/1/3;
-  background-color: yellow;
+  
+  display: grid;
+  grid-template-columns: 10% 90%;
+  grid-template-rows: 100%;
 }
-
-.mainArt{
-  background-color: blue;
-  grid-area: 2/1/2/1 ;
-}
-
-.sidePanel{
-  background-color: blueviolet;
-  grid-area: 2/2/2/3 ;
-}
-
-.bottomPanel{
-  background-color: aqua;
-  grid-area: 3/1/3/3 ;
+.menu {
+  font-size: 15px;
+  color: hsl(233, 8%, 79%);
   display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 5%;
+  margin-right: 5%;
+}
+
+
+.mainArt {
+  
+  grid-area: 2/1/2/1;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 25% 25% 25% 25%;
+}
+.mainImage{
+  grid-area: 1/1/3/3;
+  
+}
+.mainTitle{
+  margin-right: 10px;
+  grid-area: 3/1/4/1;
+}
+.mainTitle > h1{
+  font-size: 2.8rem;
+  font-weight: 800;
+}
+.mainText{
+  font-size: 15px;
+  grid-area: 3/2/4/3;
+  color: hsl(236, 13%, 42%);
+}
+.mainText > button{
+  background-color: hsl(5, 85%, 63%) ;
+  padding: 10px;
+  padding-left: 22px;
+  padding-right: 22px;
+  font-weight: 700;
+  border:none;
+  margin-top: px;
+}
+
+
+.sidePanel {
+  display:inline-flex;
+  flex-direction: column;
+  background-color: hsl(240, 100%, 5%);
+  grid-area: 2/2/3/3;
+  margin-left: 20px;
+  height: 100%;
+}
+.sidePanel > *{
+  margin: 20px;
+}
+.sideTitle{
+  font-size: 1.3rem;
+  color: hsl(35, 77%, 62%);
+  margin-top: -10px;
+}
+.sideArt{
+  margin-top: -30px;
+}
+.sideArt > h3{
+  font-size: 0.9rem;
+  color:hsl(36, 100%, 99%);
+}
+.sideArt > p{
+color:hsl(236, 13%, 42%);
+font-size: 15px;
+}
+
+
+
+.bottomPanel {
+  margin-top: 20px;
+  
+  grid-area: 3/1/3/3;
+  display: inline-flex;
+  justify-content: space-evenly;
+}
+.bottomArt{
+  display: grid;
+  grid-template-columns: 25% 75%;
+  grid-template-rows: 25% 20% ;
+}
+.artImageB{
+  grid-area: 1/1/3/1;
+}
+.bottomText{
+  margin-left: 10px;
+  margin-right: 5px;
+  margin-top: -20px;
+}
+.bottomText > h2{
+  color: hsl(5, 85%, 63%);
+  font-weight: 800;
+  margin-bottom: -10px;
+}
+.bottomText > h3{
+font-size: 18px;
+margin-bottom: -5px;
+}
+.bottomText > p{
+  font-size: 15px;
 }
